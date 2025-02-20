@@ -1,4 +1,4 @@
-import { IForecastItem } from '@/widgets/Result/UI'
+import { IForecastItem } from '@/widgets/Result/model/interfaces/forecastItem'
 
 export interface IForecastResponse {
     list: IForecastItem[]

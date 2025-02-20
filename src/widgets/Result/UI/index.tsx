@@ -47,7 +47,11 @@ const Result = () => {
     }
 
     if (!data || !data.list.length) {
-        return <div className={styles.notFound}>Ещё ничего нет</div>
+        return (
+            <Loading isLoading={isLoading}>
+                <div className={styles.notFound}>Ещё ничего нет</div>
+            </Loading>
+        )
     }
 
     return (

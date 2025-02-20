@@ -1,0 +1,45 @@
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2px 32px;
+
+  @media (min-width: 576px) {
+    flex-direction: row;
+  }
+}
+
+.label {
+  display: flex;
+  gap: 10px;
+  padding-block: 10px;
+}
+
+.name {
+  min-width: 150px;
+
+  @media (min-width: 576px) {
+    min-width: unset;
+  }
+}
+
+.select {
+  min-width: 160px;
+
+  @media (min-width: 576px) {
+    min-width: 130px;
+  }
+}
+
+.notFound {
+  font-size: 32px;
+  font-weight: 500;
+  color: #50505050;
+  padding-top: 50px;
+  text-align: center;
+}
